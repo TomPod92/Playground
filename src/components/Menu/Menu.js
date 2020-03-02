@@ -7,19 +7,19 @@ const MobileMenu = props => {
   return (
     <div className={props.open ? "mobileMenu mobileMenu--open" : "mobileMenu"}>
       <nav className="mobileNav">
-        {/* <NavLink className="mobileNav__item" to="/animation" exact onClick={props.openMenu}>
+        <NavLink className="mobileNav__item" to="/animation" exact onClick={props.openMenu}>
           Animation
         </NavLink>
 
-        <NavLink className="mobileNav__item" to="/drawer" exact onClick={props.openMenu}>
+        {/* <NavLink className="mobileNav__item" to="/drawer" exact onClick={props.openMenu}>
             Drawer
-        </NavLink>
+        </NavLink> */}
 
-        <NavLink className="mobileNav__item" to="/draganddrop" exact onClick={props.openMenu}>
+        {/* <NavLink className="mobileNav__item" to="/draganddrop" exact onClick={props.openMenu}>
             Drag and Drop
-        </NavLink>
+        </NavLink> */}
 
-        <NavLink className="mobileNav__item" to="/toasts" exact onClick={props.openMenu}>
+        {/* <NavLink className="mobileNav__item" to="/toasts" exact onClick={props.openMenu}>
             Toasts
         </NavLink> */}
       </nav>

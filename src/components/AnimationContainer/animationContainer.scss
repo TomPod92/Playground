@@ -1,0 +1,51 @@
+
+.moveItButton {
+    margin-bottom: 20px;
+    padding: 1rem 2rem;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+    background: var(--color-primary);
+    z-index: 3;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    width: 10.4rem;
+    height: 10.4rem;
+    background: var(--color-secondary);
+}
+
+.box3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    min-width: 10rem;
+    min-height: 10rem;
+    background: var(--color-secondary);
+}
+
+
+.box-container {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
