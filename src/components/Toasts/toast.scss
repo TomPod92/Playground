@@ -1,0 +1,28 @@
+.toast__link {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--color-text-white);
+    background: var(--color-secondary);
+    border-radius: 5px;
+    box-shadow: var(--shadow-diagonal);
+}
+
+.toast__button {
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    color: var(--color-text-white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-primary);
+    box-shadow: var(--shadow-diagonal);
+}
+
+.my_custom_toast__classname {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
