@@ -1,0 +1,37 @@
+.openButton {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--color-text-white);
+    background: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.modal__header {
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+
+.modal__text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.modal__closeButton {
+    display: block;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--color-text-white);
+    background: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+}
