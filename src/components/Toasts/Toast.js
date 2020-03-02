@@ -1,5 +1,6 @@
 import React from 'react';
-import CustomToast from './CustomToast.js'
+import CustomToast from './CustomToast.js';
+import DocsButton from '../DocsButton/DocsButton.js';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './toast.scss';
@@ -30,7 +31,7 @@ const Toast = () => {
         <div className="container">
             <button className="toast__button" onClick={notify}>Open</button>
 
-            <a href="https://www.npmjs.com/package/react-toastify" target="_blank" className="toast__link">See docs</a>
+            <DocsButton link="https://www.npmjs.com/package/react-toastify"/>
 
             <ToastContainer
                 position="bottom-right"

@@ -9,6 +9,7 @@ import DrawerContainer from '../components/DrawerContainer/DrawerContainer.js';
 import AnimationContainer from '../components/AnimationContainer/AnimationContainer.js';
 import DragAndDrop from '../components/DragAndDrop/DragAndDrop.js';
 import Toasts from '../components/Toasts/Toast.js';
+import Icons from '../components/Icons/Icons.js';
 import './app.scss';
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/drawer" component={DrawerContainer} />
         <Route path="/draganddrop" component={DragAndDrop} />
         <Route path="/toasts" component={Toasts} />
+        <Route path="/icons" component={Icons} />
       </Switch>
     </BrowserRouter>
   )
