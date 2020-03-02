@@ -1,0 +1,31 @@
+
+.drawer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    background: var(--color-primary);
+
+    &__button {
+        padding: 1rem 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        background: var(--color-accent);
+        border: none;
+    }
+
+    &__paragraph {
+        overflow: hidden;
+        height: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &__paragraph p {
+        font-size: 1.5rem;
+        color: var(--color-text-white);
+        padding: 1rem 2rem;
+    }
+}
