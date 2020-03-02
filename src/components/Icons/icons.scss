@@ -5,6 +5,12 @@
     flex-direction: column;
 }
 
+.icon__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .icons__header {
     position: relative;
     display: block;
@@ -31,4 +37,10 @@
     font-size: 6rem;
     margin-bottom: 2rem;
     color: var(--color-primary);
+}
+
+.reactIconClass {
+    color: var(--color-secondary);
+    font-size: 5rem;
+    margin-top: 1rem;
 }

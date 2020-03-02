@@ -1,9 +1,11 @@
 import React from 'react';
 import CustomToast from './CustomToast.js';
-import DocsButton from '../DocsButton/DocsButton.js';
+import Docs from '../Docs/Docs.js';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './toast.scss';
+
+const toastsCommands = ['npm install --save react-toastify'];
 
 const Toast = () => {
 
@@ -31,8 +33,6 @@ const Toast = () => {
         <div className="container">
             <button className="toast__button" onClick={notify}>Open</button>
 
-            <DocsButton link="https://www.npmjs.com/package/react-toastify"/>
-
             <ToastContainer
                 position="bottom-right"
                 autoClose={5000}
@@ -44,6 +44,8 @@ const Toast = () => {
                 draggable
                 pauseOnHover
             ></ToastContainer>
+
+            <Docs link="https://www.npmjs.com/package/react-toastify" commands={toastsCommands} />
         </div>
      );
 }
