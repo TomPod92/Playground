@@ -1,0 +1,54 @@
+.dragAndDrop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    padding: 1.5rem;
+    color: var(--color-text-white);
+    border: 3px solid var(--color-primary);
+    border-radius: 5px;
+
+    &__title {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin-bottom: 5rem;
+        color: var(--color-primary);
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__title:after {
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        content: '';
+        display: block;
+        width: 80%;
+        height: 2px;
+        background: var(--color-primary);
+        transform: translateX(-50%);
+    }
+}
+
+.card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+}

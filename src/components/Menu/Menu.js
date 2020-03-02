@@ -15,9 +15,9 @@ const MobileMenu = props => {
             Drawer
         </NavLink>
 
-        {/* <NavLink className="mobileNav__item" to="/draganddrop" exact onClick={props.openMenu}>
+        <NavLink className="mobileNav__item" to="/draganddrop" exact onClick={props.openMenu}>
             Drag and Drop
-        </NavLink> */}
+        </NavLink>
 
         {/* <NavLink className="mobileNav__item" to="/toasts" exact onClick={props.openMenu}>
             Toasts
