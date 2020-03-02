@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #519D9E;
+  --color-secondary: #58C9B9;
+  --color-tertiary: #9DC8C8;
+  --color-accent: #D1B6E1;
+  --color-text-white: #e2e2e2;
+  --shadow-down: 0 4px 8px rgba(0, 0, 0, 0.35);
+  --shadow-diagonal: 4px 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eeeeee;
+  box-sizing: border-box;
+}
+
