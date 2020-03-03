@@ -1,0 +1,22 @@
+.countup {
+    display: flex;
+}
+
+.countup__button-container button {
+    padding: 0.5rem 1rem;
+    color: var(--color-primary);
+    font-weight: bold;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+}
+
+.countup__number {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    border-radius: 10px;
+    color: var(--color-text-white);
+    background: var(--color-primary);
+}
