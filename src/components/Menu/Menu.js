@@ -16,6 +16,7 @@ const MobileMenu = props => {
         <NavLink className="mobileNav__item" to="/tooltip" exact onClick={props.openMenu}>Tooltip</NavLink>
         <NavLink className="mobileNav__item" to="/countup" exact onClick={props.openMenu}>Countup</NavLink>
         <NavLink className="mobileNav__item" to="/idleTimer" exact onClick={props.openMenu}>Idle Timer</NavLink>
+        <NavLink className="mobileNav__item" to="/colorpicker" exact onClick={props.openMenu}>Color Picker</NavLink>
       </nav>
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, useInvertedScale } from "framer-motion";
+import { motion } from "framer-motion";
 import './animationContainer.scss';
 
 const AnimationContainer = () => {

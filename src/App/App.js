@@ -15,6 +15,7 @@ import MyModal from '../components/Modal/Modal.js';
 import Tooltip from '../components/Tooltip/Tooltip.js';
 import Countup from '../components/Countup/Countup.js';
 import IdleTimerContainer from '../components/IdleTimerContainer/IdleTimerContainer.js';
+import ReactColorPicker from '../components/ReactColorPicker/ReactColorPicker.js';
 import './app.scss';
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/tooltip" component={Tooltip} />
         <Route path="/countup" component={Countup} />
         <Route path="/idletimer" component={IdleTimerContainer} />
+        <Route path="/colorpicker" component={ReactColorPicker} />
       </Switch>
     </BrowserRouter>
   )

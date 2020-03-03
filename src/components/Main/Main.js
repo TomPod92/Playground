@@ -11,7 +11,7 @@ const Main = () => {
         <p className="app__paragraph">4. Pamiętać o dodatku -Docs-:</p>
         <p className="app__paragraph">------------------------------------</p>
         <p className="app__paragraph">import Docs from '../Docs/Docs.js';</p>
-        <p className="app__paragraph">{ `Docs link="..." text="..." commands={...}/>` }</p>
+        <p className="app__paragraph">{ `<Docs link="..." text="..." commands={...}/>` }</p>
     </div> 
     );
 }
