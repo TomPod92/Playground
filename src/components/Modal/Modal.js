@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import Docs from '../Docs/Docs.js';
 import './modal.scss';
+
+const modalCommands = ['npm install react-modal'];
 
 Modal.setAppElement('#root'); // bez tego wyskakuje blad
 
@@ -29,6 +32,8 @@ const MyModal = () => {
             <p className="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque maxime blanditiis error, quasi deserunt fugit a hic repudiandae impedit fugiat dolores ratione, earum modi deleniti, aperiam veritatis odio reiciendis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque maxime blanditiis error, quasi deserunt fugit a hic repudiandae impedit fugiat dolores ratione, earum modi deleniti, aperiam veritatis odio reiciendisLorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque maxime blanditiis error, quasi deserunt fugit a hic repudiandae impedit fugiat dolores ratione, earum modi deleniti, aperiam veritatis odio reiciendis</p>
             <button className="modal__closeButton" onClick={handleCloseModal}>Close</button>
         </Modal>
+
+        <Docs link="http://reactcommunity.org/react-modal/" commands={modalCommands}/>
 
     </div> 
     );
