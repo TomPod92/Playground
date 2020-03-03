@@ -2,8 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
+
+.icons__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.icons__section:first-child { margin-right: 5rem; }
 
 .icon__container {
     display: flex;
@@ -16,21 +23,6 @@
     display: block;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    color: var(--color-primary);
-    font-size: 2rem;
-    letter-spacing: 2px;
-
-    &:after {
-        position: absolute;
-        bottom: -1rem;
-        left: 50%;
-        display: block;
-        content: '';
-        width: 120%;
-        height: 2px;
-        background: var(--color-primary);
-        transform: translateX(-50%);
-    }
 }
 
 .icons__icon {

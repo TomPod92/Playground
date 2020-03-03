@@ -1,0 +1,13 @@
+.home {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 1rem 1rem 5px;
+    border-bottom-right-radius: 25px;
+    font-size: 3rem;
+    color: var(--color-text-white);
+    background: var(--color-primary);
+    box-shadow: var(--shadow-diagonal);
+    z-index: 10;
+}

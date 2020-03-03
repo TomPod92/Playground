@@ -6,7 +6,7 @@ import { FaAccessibleIcon } from "react-icons/fa"; // dostepne sa ikony z wielu 
 import { IconContext } from 'react-icons';
 
 // ------------FORTAWESOME----------
-import IconComponent from './IconComponent.js';
+import IconComponent from './IconComponent.js'; //moj komponent
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { fab } from '@fortawesome/free-brands-svg-icons'; // wszystkie ikony z serii "brand" np apple, google itd
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
@@ -24,39 +24,42 @@ const Icons = () => {
     return ( 
         <div className="container">
             <div className="icons">
-                {/* ------------------------------------------------------------------------------------------------ */}
-                <h2 className="icons__header">Ikony "fortawesome" importowane pojedyńczo do każdego komponentu</h2>
-                
-                <div className="icon__container">
-                    <div className="icons__icon">
-                        <FontAwesomeIcon icon={faCheckCircle} className="icons_icon"/>
-                    </div>
-
-                    <FontAwesomeIcon icon={faCoffee} size='2x'/>
-                </div>
-                {/* --------------- */}
-                <h2 className="icons__header">Ikony "fortawesome" importowane do biblioteki ikon</h2>
-
-                <IconComponent />
-                <Docs link="https://www.npmjs.com/package/@fortawesome/react-fontawesome" text="for fortawesome" commands={fortawesomeCommands}/>
-
-                {/* ------------------------------------------------------------------------------------------------ */}
-                <h2 className="icons__header">Ikony "react icons" stylowane pojedyńczo</h2>
-                <div className="icon__container">
-                    <FaAccessibleIcon color="#519D9E" size="5rem"/>
-                    <FaAccessibleIcon className="reactIconClass"/>
-                </div>
-                {/* ---------------- */}
-                <h2 className="icons__header">Ikony "react icons" stylowane przez "context"</h2>
-
-                <IconContext.Provider value={{ color:"#519D9E", size:"5rem" }}>
+                <div className="icons__section">
+                    {/* ------------------------------------------------------------------------------------------------ */}
+                    <h2 className="icons__header basicHeader">Ikony "fortawesome" importowane pojedyńczo do każdego komponentu</h2>
+                    
                     <div className="icon__container">
-                        <FaAccessibleIcon />
-                        <FaAccessibleIcon />
-                    </div>
-                </IconContext.Provider>
+                        <div className="icons__icon">
+                            <FontAwesomeIcon icon={faCheckCircle} className="icons_icon"/>
+                        </div>
 
-                <Docs link="https://react-icons.netlify.com/#/" text="for react icons" commands={reactIconsCommands}/>
+                        <FontAwesomeIcon icon={faCoffee} size='2x'/>
+                    </div>
+                    {/* --------------- */}
+                    <h2 className="icons__header basicHeader">Ikony "fortawesome" importowane do biblioteki ikon</h2>
+
+                    <IconComponent />
+                    <Docs link="https://www.npmjs.com/package/@fortawesome/react-fontawesome" text="for fortawesome" commands={fortawesomeCommands}/>
+                </div>
+                {/* ------------------------------------------------------------------------------------------------ */}
+                <div className="icons__section">
+                    <h2 className="icons__header basicHeader">Ikony "react icons" stylowane pojedyńczo</h2>
+                    <div className="icon__container">
+                        <FaAccessibleIcon color="#519D9E" size="5rem"/>
+                        <FaAccessibleIcon className="reactIconClass"/>
+                    </div>
+                    {/* ---------------- */}
+                    <h2 className="icons__header basicHeader">Ikony "react icons" stylowane przez "context"</h2>
+
+                    <IconContext.Provider value={{ color:"#519D9E", size:"5rem" }}>
+                        <div className="icon__container">
+                            <FaAccessibleIcon />
+                            <FaAccessibleIcon />
+                        </div>
+                    </IconContext.Provider>
+
+                    <Docs link="https://react-icons.netlify.com/#/" text="for react icons" commands={reactIconsCommands}/>
+                </div>
                 {/* ------------------------------------------------------------------------------------------------ */}
                 
             </div>
