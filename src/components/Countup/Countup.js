@@ -42,10 +42,10 @@ const Countup = () => {
         </div>
 
         <div className="countup__button-container">
-            <button onClick={start}>Start</button>
-            <button onClick={reset}>Reset</button>
-            <button onClick={pauseResume}>Pause/Resume</button>
-            <button onClick={() => update(2000)}>Update to 2000</button>
+            <button className="button" onClick={start}>Start</button>
+            <button className="button" onClick={reset}>Reset</button>
+            <button className="button" onClick={pauseResume}>Pause/Resume</button>
+            <button className="button" onClick={() => update(2000)}>Update to 2000</button>
         </div>
 
         <Docs link="https://www.npmjs.com/package/react-countup" commands={countupCommands} />

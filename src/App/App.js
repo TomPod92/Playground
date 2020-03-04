@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Home from '../components/Home/Home.js';
@@ -16,15 +16,43 @@ import Tooltip from '../components/Tooltip/Tooltip.js';
 import Countup from '../components/Countup/Countup.js';
 import IdleTimerContainer from '../components/IdleTimerContainer/IdleTimerContainer.js';
 import ReactColorPicker from '../components/ReactColorPicker/ReactColorPicker.js';
+import Translations from '../components/Translations/Translations.js';
 import './app.scss';
 
-const App = () => {
+//----------------------------------------------------------------
+// importy dla "transaltions"
+import { renderToStaticMarkup } from "react-dom/server";
+import { withLocalize } from "react-localize-redux";
+// zaimportowac pliki z tłumaczeniami
+import eng from './eng.json';
+import pl from './pl.json';
+// stworzyc obiekt z tłumaczeniami
+const translations = {
+  eng: eng,
+  pl: pl,
+};
+// opakować eksport <App> w "withLocalize"
+//----------------------------------------------------------------
 
+const App = (props) => {
   const [ menuOpen, setMenuOpen ] = useState(false);
+  const openMenu = () => setMenuOpen(!menuOpen);
 
-  const openMenu = () => {
-    setMenuOpen(!menuOpen);
-  }
+  // jak tylko komponent sie wyrenderuje zainicjalizowac tłumaczenia
+  useEffect( () => {
+    props.initialize({
+        languages: [
+            { name: "English", code: "eng" },
+            { name: "Polski", code: "pl" }
+        ],
+        options: { renderToStaticMarkup }
+    });
+
+    Object.keys(translations).forEach( key =>props.addTranslationForLanguage(translations[key], key) );
+    
+    // props.setActiveLanguage('eng');
+  }, []);
+  //----------------------------------------------------------------
 
   return (
     <BrowserRouter>
@@ -44,9 +72,10 @@ const App = () => {
         <Route path="/countup" component={Countup} />
         <Route path="/idletimer" component={IdleTimerContainer} />
         <Route path="/colorpicker" component={ReactColorPicker} />
+        <Route path="/translations" component={Translations} />
       </Switch>
     </BrowserRouter>
   )
 }
 
-export default App;
+export default withLocalize(App);

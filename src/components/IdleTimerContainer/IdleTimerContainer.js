@@ -48,8 +48,8 @@ const IdleTimerContainer = () => {
         <h2>You've been idle for a while!</h2>
         <p>You will be logged out soon</p>
         <div>
-          <button onClick={logOut}>Log me out</button>
-          <button onClick={stayActive}>Keep me signed in</button>
+          <button className="button" onClick={logOut}>Log me out</button>
+          <button className="button" onClick={stayActive}>Keep me signed in</button>
         </div>
       </Modal>
 

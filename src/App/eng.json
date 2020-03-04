@@ -1,0 +1,8 @@
+{
+    "greeting": "Hello",
+    "farewell": "Goodbye",
+    "common": {
+        "name": "Thomas",
+        "country": "Poland"
+    }
+}

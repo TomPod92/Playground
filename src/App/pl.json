@@ -1,0 +1,8 @@
+{
+    "greeting": "Witaj",
+    "farewell": "Zegnaj",
+    "common": {
+        "name": "Tomek",
+        "country": "Polska"
+    }
+}

@@ -17,7 +17,7 @@ const MyModal = () => {
     return ( 
     <div className="container">
 
-        <button className="openButton" onClick={handleOpenModal}>Open</button>
+        <button className="openButton button" onClick={handleOpenModal}>Open</button>
 
         <Modal 
             isOpen={modalIsOpen} 
@@ -30,7 +30,7 @@ const MyModal = () => {
         >
             <h2 className="modal__header">React Modal</h2>
             <p className="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque maxime blanditiis error, quasi deserunt fugit a hic repudiandae impedit fugiat dolores ratione, earum modi deleniti, aperiam veritatis odio reiciendis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque maxime blanditiis error, quasi deserunt fugit a hic repudiandae impedit fugiat dolores ratione, earum modi deleniti, aperiam veritatis odio reiciendisLorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque maxime blanditiis error, quasi deserunt fugit a hic repudiandae impedit fugiat dolores ratione, earum modi deleniti, aperiam veritatis odio reiciendis</p>
-            <button className="modal__closeButton" onClick={handleCloseModal}>Close</button>
+            <button className="modal__closeButton button" onClick={handleCloseModal}>Close</button>
         </Modal>
 
         <Docs link="http://reactcommunity.org/react-modal/" commands={modalCommands}/>
