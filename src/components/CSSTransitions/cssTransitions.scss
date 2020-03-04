@@ -1,0 +1,63 @@
+.cssTransitions__header {
+    margin-top: 5rem;
+}
+
+.cssTransitions__button {
+    margin: 1rem 0 2rem 0;
+}
+
+.singleBox {
+    padding: 1rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.slide-in-left-enter {
+    transform: translateX(-100%);
+    // transform: scale(0);
+}
+  
+.slide-in-left-enter-active {
+    transform: translateX(0);
+    // transform: scale(1);
+    opacity: 1;
+    transition: all 500ms;
+}
+
+.slide-in-left-exit {
+    transform: translateX(0%);
+    // transform: scale(1);
+    opacity: 1;
+}
+
+.slide-in-left-exit-active {
+    transform: translateX(-100%);
+    // transform: scale(0);
+    opacity: 0;
+    transition: all 500ms;
+}
+//----------------------------------------------
+//----------------------------------------------
+.listItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.listItem__button {
+    padding: 1rem;
+    margin-left: 2rem;
+    background: var(--color-primary);
+    color: var(--color-text-white);
+    border: none;
+    border-radius: 5px;
+}

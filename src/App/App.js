@@ -17,6 +17,7 @@ import Countup from '../components/Countup/Countup.js';
 import IdleTimerContainer from '../components/IdleTimerContainer/IdleTimerContainer.js';
 import ReactColorPicker from '../components/ReactColorPicker/ReactColorPicker.js';
 import Translations from '../components/Translations/Translations.js';
+import CSSTransitions from '../components/CSSTransitions/CSSTransitions.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -73,6 +74,7 @@ const App = (props) => {
         <Route path="/idletimer" component={IdleTimerContainer} />
         <Route path="/colorpicker" component={ReactColorPicker} />
         <Route path="/translations" component={Translations} />
+        <Route path="/csstransitions" component={CSSTransitions} />
       </Switch>
     </BrowserRouter>
   )
