@@ -39,4 +39,10 @@ body {
   background: var(--color-primary);
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+
+  &:hover {
+    box-shadow: var(--shadow-diagonal);
+  }
 }

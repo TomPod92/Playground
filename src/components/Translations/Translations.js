@@ -16,7 +16,7 @@ const Translations = (props) => {
 
     useEffect( () => {
         props.setActiveLanguage(language);
-    }, [language])
+    }, [language, props])
 
     const handleLanguageChange = () => {
         if(language === 'eng') setLanguage('pl');

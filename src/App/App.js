@@ -18,6 +18,7 @@ import IdleTimerContainer from '../components/IdleTimerContainer/IdleTimerContai
 import ReactColorPicker from '../components/ReactColorPicker/ReactColorPicker.js';
 import Translations from '../components/Translations/Translations.js';
 import CSSTransitions from '../components/CSSTransitions/CSSTransitions.js';
+import ReactClassnames from '../components/ReactClassnames/ReactClassnames.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -75,6 +76,7 @@ const App = (props) => {
         <Route path="/colorpicker" component={ReactColorPicker} />
         <Route path="/translations" component={Translations} />
         <Route path="/csstransitions" component={CSSTransitions} />
+        <Route path="/reactClassnames" component={ReactClassnames} />
       </Switch>
     </BrowserRouter>
   )
