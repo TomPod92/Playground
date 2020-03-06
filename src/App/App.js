@@ -19,6 +19,7 @@ import ReactColorPicker from '../components/ReactColorPicker/ReactColorPicker.js
 import Translations from '../components/Translations/Translations.js';
 import CSSTransitions from '../components/CSSTransitions/CSSTransitions.js';
 import ReactClassnames from '../components/ReactClassnames/ReactClassnames.js';
+import Sortable from '../components/Sortable/Sortable.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -77,6 +78,7 @@ const App = (props) => {
         <Route path="/translations" component={Translations} />
         <Route path="/csstransitions" component={CSSTransitions} />
         <Route path="/reactClassnames" component={ReactClassnames} />
+        <Route path="/sortable" component={Sortable} />
       </Switch>
     </BrowserRouter>
   )
