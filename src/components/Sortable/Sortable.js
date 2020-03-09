@@ -8,6 +8,7 @@ import './sortable.scss';
 // można dodać dodatkowe propsy na <ReactSortable /> np. żeby nie pokazywać drag'owanego elementu. Link do dostępnych opcji znajduje się w linku podanym w "see docs"
 
 const sortableCommands = ['npm install --save react-sortablejs'];
+const sortableLinks = [{link: "https://github.com/SortableJS/react-sortablejs", text:'for sortable'}];
 
 const Sortable = () => {
     const [ todos, setTodos ] = useState([
@@ -49,7 +50,7 @@ const Sortable = () => {
                 { todos.map(current => <Todo key={current.id} todo={current} handleRemoveTodo={handleRemoveTodo}/>) }
             </ReactSortable>
             
-            <Docs link="https://github.com/SortableJS/react-sortablejs" commands={sortableCommands}/>
+            <Docs links={sortableLinks} commands={sortableCommands}/>
         </div> 
     );
 }

@@ -17,8 +17,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 library.add(faCheckCircle, faCoffee, faCheckSquare);
 
 const fortawesomeCommands = ['npm i --save @fortawesome/fontawesome-svg-core', 'npm i --save @fortawesome/free-solid-svg-icons', 'npm i --save @fortawesome/react-fontawesome', 'npm i --save @fortawesome/free-regular-svg-icons'];
+const fortawesomeLinks = [{link: 'https://www.npmjs.com/package/@fortawesome/react-fontawesome', text: 'for fortawesome'}];
 
 const reactIconsCommands = ['npm install react-icons --save'];
+const reactIconsLinks = [{link: 'https://react-icons.netlify.com/#/', text: 'for react icons'}];
 
 const Icons = () => {
     return ( 
@@ -39,7 +41,7 @@ const Icons = () => {
                     <h2 className="icons__header basicHeader">Ikony "fortawesome" importowane do biblioteki ikon</h2>
 
                     <IconComponent />
-                    <Docs link="https://www.npmjs.com/package/@fortawesome/react-fontawesome" text="for fortawesome" commands={fortawesomeCommands}/>
+                    <Docs links={fortawesomeLinks} commands={fortawesomeCommands}/>
                 </div>
                 {/* ------------------------------------------------------------------------------------------------ */}
                 <div className="icons__section">
@@ -58,7 +60,7 @@ const Icons = () => {
                         </div>
                     </IconContext.Provider>
 
-                    <Docs link="https://react-icons.netlify.com/#/" text="for react icons" commands={reactIconsCommands}/>
+                    <Docs links={reactIconsLinks} commands={reactIconsCommands}/>
                 </div>
                 {/* ------------------------------------------------------------------------------------------------ */}
                 

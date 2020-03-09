@@ -7,6 +7,8 @@ import './cssTransitions.scss';
 
 const cssTransitionsCommands = ['npm install react-transition-group --save'];
 
+const cssTransitionsLinks = [{link: '"https://reactcommunity.org/react-transition-group/"', text: 'for transition group'}];
+
 const CSSTransitions = () => {
     const [ boxOpen, setBoxOpen ] = useState(false);
     
@@ -53,7 +55,7 @@ const CSSTransitions = () => {
             </TransitionGroup>
 
 
-            <Docs link="https://reactcommunity.org/react-transition-group/" commands={cssTransitionsCommands}/>
+            <Docs links={cssTransitionsLinks} commands={cssTransitionsCommands}/>
         </div>
      );
 }

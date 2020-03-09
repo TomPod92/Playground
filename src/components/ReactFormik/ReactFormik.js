@@ -8,6 +8,10 @@ import * as Yup from 'yup';
 
 const formikCommands = ['npm install formik --save', 'npm install -S yup'];
 
+const formikLinks = [
+    { link: 'https://jaredpalmer.com/formik/docs/overview', text: 'for Formik' },
+    { link: 'https://www.npmjs.com/package/yup', text: 'for Yup' },
+];
 
 const ReactFormik = () => {
 
@@ -61,7 +65,7 @@ const ReactFormik = () => {
                     <button className="button form__button" type="submit" disabled={formik.isSubmitting}>Wyślij</button>
                 </form>
 
-            <Docs link="https://jaredpalmer.com/formik/docs/overview" text="for Formik" commands={formikCommands}/>
+            <Docs links={formikLinks} commands={formikCommands}/>
         </div>
      );
 }

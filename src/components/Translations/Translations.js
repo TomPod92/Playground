@@ -5,6 +5,7 @@ import InnerComponent from './InnerComponent.js';
 import './translations.scss';
 
 const translationsCommands = ['npm install react-localize-redux --save'];
+const translationsLinks = [{link: 'https://ryandrewjohnson.github.io/react-localize-redux-docs/#getting-started', text:'for transations'}];
 
 // dodatkowy kod w pliku index.js i App.js 
 // komponent który chce zmieniać język (czuli korzystać z props.setActiveLanguage()) musi byc opakowany w withLocalize()
@@ -31,7 +32,7 @@ const Translations = (props) => {
 
             <button className="button" onClick={ handleLanguageChange }>Zmien jezyk</button>
 
-            <Docs link="https://ryandrewjohnson.github.io/react-localize-redux-docs/#getting-started" commands={translationsCommands}/>
+            <Docs links={translationsLinks} commands={translationsCommands}/>
         </div>
      );
 }

@@ -4,6 +4,7 @@ import Docs from '../Docs/Docs.js';
 import './ReactClassnames.scss';
 
 const reactClassnamesCommands = ['npm install classnames --save'];
+const reactClassnamesLinks = [{link: "https://www.npmjs.com/package/classnames", text:"for classes"}];
 
 const ReactClassnames = () => {
 
@@ -49,7 +50,7 @@ const ReactClassnames = () => {
                 </button>
             </div>
             
-            <Docs link="https://www.npmjs.com/package/classnames" commands={reactClassnamesCommands}/>
+            <Docs links={reactClassnamesLinks} commands={reactClassnamesCommands}/>
 
         </div> 
     );

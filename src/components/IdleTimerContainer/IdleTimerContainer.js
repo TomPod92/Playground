@@ -4,6 +4,7 @@ import IdleTimer from 'react-idle-timer';
 import Modal from 'react-modal';
 
 const idleTimerCommands = ['npm install react-idle-timer --save'];
+const idleTimerlinks = [{link: 'https://www.npmjs.com/package/react-idle-timer', text: 'for idle timer'}];
 
 Modal.setAppElement('#root');
 
@@ -36,7 +37,7 @@ const IdleTimerContainer = () => {
     <div className="container">
 
       {isLoggedIn ? <h2 className="basicHeader">Hello Tomek</h2> : <h2 className="basicHeader">Hello Guest</h2>}
-      <Docs link="https://www.npmjs.com/package/react-idle-timer"  commands={idleTimerCommands}/>
+      <Docs links={idleTimerlinks}  commands={idleTimerCommands}/>
 
       <IdleTimer
         ref={idleTimerRef}

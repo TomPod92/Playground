@@ -5,6 +5,8 @@ import './countup.scss';
 
 const countupCommands = ['npm install react-countup'];
 
+const countupLinks = [{ link: "https://www.npmjs.com/package/react-countup", text: 'for countup' }];
+
 const Countup = () => {
 
     const { countUp, start, pauseResume, reset, update } = useCountUp({
@@ -48,7 +50,7 @@ const Countup = () => {
             <button className="button" onClick={() => update(2000)}>Update to 2000</button>
         </div>
 
-        <Docs link="https://www.npmjs.com/package/react-countup" commands={countupCommands} />
+        <Docs links={countupLinks} commands={countupCommands} />
     </div> 
     );
 }

@@ -4,6 +4,7 @@ import Docs from '../Docs/Docs.js';
 import './modal.scss';
 
 const modalCommands = ['npm install react-modal'];
+const modalLinks = [{link: 'http://reactcommunity.org/react-modal/', text: 'for modal'}];
 
 Modal.setAppElement('#root'); // bez tego wyskakuje blad
 
@@ -33,7 +34,7 @@ const MyModal = () => {
             <button className="modal__closeButton button" onClick={handleCloseModal}>Close</button>
         </Modal>
 
-        <Docs link="http://reactcommunity.org/react-modal/" commands={modalCommands}/>
+        <Docs links={modalLinks} commands={modalCommands}/>
 
     </div> 
     );

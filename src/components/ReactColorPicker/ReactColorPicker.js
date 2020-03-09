@@ -4,6 +4,7 @@ import Docs from '../Docs/Docs.js';
 import './reactColorPicker.scss';
 
 const reactColorCommands = ['npm install react-color --save'];
+const reactColorLinks = [{link: "http://casesandberg.github.io/react-color/", text:'for color picker'}];
 
 const ReactColorPicker = () => {
 
@@ -15,7 +16,7 @@ const ReactColorPicker = () => {
         <div className="reactColorPicker container">
             <ChromePicker color={color} onChange={handleChangeColor} className="colorPicker"/>
 
-            <Docs link="http://casesandberg.github.io/react-color/" commands={reactColorCommands}/>
+            <Docs links={reactColorLinks} commands={reactColorCommands}/>
         </div>
      );
 }
