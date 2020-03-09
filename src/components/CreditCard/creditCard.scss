@@ -1,0 +1,28 @@
+.creditCard-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.creditCard-form > label {
+    
+}
+
+.creditCard-form > input {
+    padding: 0.6rem 1.2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+}
+
+.myCard {
+    width: 50rem;
+    margin-bottom: 3rem;
+}
+
+.myCard  .rccs__card--front {
+}
+
+$rccs-card-ratio: 1.2;
+$rccs-name-font-size: 23rem;
+$rccs-size: 200px !important;
