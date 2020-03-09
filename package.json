@@ -9,6 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "@tippy.js/react": "^3.1.1",
     "classnames": "^2.2.6",
+    "formik": "^2.1.4",
     "framer-motion": "^1.8.4",
     "immutability-helper": "^3.0.1",
     "lodash.flow": "^3.5.0",
@@ -28,7 +29,8 @@
     "react-sortablejs": "^2.0.11",
     "react-toastify": "^5.5.0",
     "react-transition-group": "^4.3.0",
-    "uuid": "^7.0.2"
+    "uuid": "^7.0.2",
+    "yup": "^0.28.3"
   },
   "scripts": {
     "start": "react-scripts start",

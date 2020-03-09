@@ -1,0 +1,45 @@
+.form {
+    padding: 2rem 4rem;
+    margin-bottom: 4rem;
+    border: 3px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+.form__button {
+    padding: 0.7rem 1.4rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+}
+
+.input-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.input-row > label {
+    margin-bottom: 0.6rem;
+}
+
+.input-row > input {
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.input-row > .has-error {
+    border: 2px solid red;
+}
+
+.formInfo {
+    position: absolute;
+    bottom: -2rem;
+    left: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+    &--error { color: red; }
+    &--correct { color: green; }
+}

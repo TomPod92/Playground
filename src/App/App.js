@@ -20,6 +20,7 @@ import Translations from '../components/Translations/Translations.js';
 import CSSTransitions from '../components/CSSTransitions/CSSTransitions.js';
 import ReactClassnames from '../components/ReactClassnames/ReactClassnames.js';
 import Sortable from '../components/Sortable/Sortable.js';
+import ReactFormik from '../components/ReactFormik/ReactFormik.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -79,6 +80,7 @@ const App = (props) => {
         <Route path="/csstransitions" component={CSSTransitions} />
         <Route path="/reactClassnames" component={ReactClassnames} />
         <Route path="/sortable" component={Sortable} />
+        <Route path="/formik" component={ReactFormik} />
       </Switch>
     </BrowserRouter>
   )
