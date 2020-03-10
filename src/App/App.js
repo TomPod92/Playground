@@ -23,6 +23,7 @@ import Sortable from '../components/Sortable/Sortable.js';
 import ReactFormik from '../components/ReactFormik/ReactFormik.js';
 import CreditCard from '../components/CreditCard/CreditCard.js';
 import Spinner from '../components/Spinner/Spinner.js';
+import LoaderSpinner from '../components/LoaderSpinner/LoaderSpinner.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -85,6 +86,7 @@ const App = (props) => {
         <Route path="/formik" component={ReactFormik} />
         <Route path="/creditcard" component={CreditCard} />
         <Route path="/spinner" component={Spinner} />
+        <Route path="/loader" component={LoaderSpinner} />
       </Switch>
     </BrowserRouter>
   )
