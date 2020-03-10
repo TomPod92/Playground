@@ -24,6 +24,7 @@ import ReactFormik from '../components/ReactFormik/ReactFormik.js';
 import CreditCard from '../components/CreditCard/CreditCard.js';
 import Spinner from '../components/Spinner/Spinner.js';
 import LoaderSpinner from '../components/LoaderSpinner/LoaderSpinner.js';
+import CollapsibleDrawer from '../components/CollapsibleDrawer/CollapsibleDrawer.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -87,6 +88,7 @@ const App = (props) => {
         <Route path="/creditcard" component={CreditCard} />
         <Route path="/spinner" component={Spinner} />
         <Route path="/loader" component={LoaderSpinner} />
+        <Route path="/collapsibleDrawer" component={CollapsibleDrawer} />
       </Switch>
     </BrowserRouter>
   )

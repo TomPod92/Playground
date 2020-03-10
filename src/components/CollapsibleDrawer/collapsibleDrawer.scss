@@ -1,0 +1,27 @@
+.collapsible {
+    width: 60%;
+    margin-bottom: 1rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+
+    &__trigger {
+        display: block;
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        text-align: center;
+        color: var(--color-text-white);
+        background: var(--color-primary);
+        transition: all 0.3s ease-in;
+
+
+        &:hover {
+            background: var(--color-secondary);
+        }
+    }
+
+    &__contentInner {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+}
