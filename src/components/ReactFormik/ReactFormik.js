@@ -13,6 +13,8 @@ const formikLinks = [
     { link: 'https://www.npmjs.com/package/yup', text: 'for Yup' },
 ];
 
+const formikTutorials = ['https://www.youtube.com/watch?v=TxEVnaISj1w&list=PL8fumNHsC-3O0iQ_KP2Gz5f8ib2jP5rPv&index=23', 'https://www.youtube.com/watch?v=FD50LPJ6bjE', 'https://www.youtube.com/watch?v=yNiJkjEwmpw&t=1s'];
+
 const ReactFormik = () => {
 
     const formik = useFormik({
@@ -65,7 +67,7 @@ const ReactFormik = () => {
                     <button className="button form__button" type="submit" disabled={formik.isSubmitting}>Wyślij</button>
                 </form>
 
-            <Docs links={formikLinks} commands={formikCommands}/>
+            <Docs links={formikLinks} commands={formikCommands} tutorials={formikTutorials}/>
         </div>
      );
 }

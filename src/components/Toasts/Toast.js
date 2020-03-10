@@ -7,6 +7,7 @@ import './toast.scss';
 
 const toastsCommands = ['npm install --save react-toastify'];
 const toastsLinks = [{link:"https://www.npmjs.com/package/react-toastify", text: 'for toasts'}];
+const toastsTutorials = ['https://www.youtube.com/watch?v=nX_xDBR_gqo&list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM&index=3'];
 
 const Toast = () => {
 
@@ -46,7 +47,7 @@ const Toast = () => {
                 pauseOnHover
             ></ToastContainer>
 
-            <Docs links={toastsLinks} commands={toastsCommands} />
+            <Docs links={toastsLinks} commands={toastsCommands} tutorials={toastsTutorials}/>
         </div>
      );
 }

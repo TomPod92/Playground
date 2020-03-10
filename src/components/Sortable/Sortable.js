@@ -9,6 +9,7 @@ import './sortable.scss';
 
 const sortableCommands = ['npm install --save react-sortablejs'];
 const sortableLinks = [{link: "https://github.com/SortableJS/react-sortablejs", text:'for sortable'}];
+const sortableTutorials = ['https://www.youtube.com/watch?v=_btr_GtT1Yg&t=455s'];
 
 const Sortable = () => {
     const [ todos, setTodos ] = useState([
@@ -50,7 +51,7 @@ const Sortable = () => {
                 { todos.map(current => <Todo key={current.id} todo={current} handleRemoveTodo={handleRemoveTodo}/>) }
             </ReactSortable>
             
-            <Docs links={sortableLinks} commands={sortableCommands}/>
+            <Docs links={sortableLinks} commands={sortableCommands} tutorials={sortableTutorials}/>
         </div> 
     );
 }

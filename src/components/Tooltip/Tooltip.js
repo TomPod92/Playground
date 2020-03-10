@@ -8,6 +8,7 @@ import './tooltip.scss';
 
 const tooltipCommands = ['npm i \'@tippy.js/react\''];
 const tooltipLinks = [{link: 'https://github.com/atomiks/tippy.js-react', text:'for tooltips'}];
+const tooltipTutorials = ['https://www.youtube.com/watch?v=8y4Dr9jJtF0&list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM&index=5'];
 
 const Tooltip = () => {
     return ( 
@@ -43,7 +44,7 @@ const Tooltip = () => {
             <CustomChild />
         </Tippy>
 {/* -------------------------------------------------------------------------------- */}
-        <Docs links={tooltipLinks} commands={tooltipCommands}/>
+        <Docs links={tooltipLinks} commands={tooltipCommands} tutorials={tooltipTutorials}/>
     </div>
     );
 }

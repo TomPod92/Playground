@@ -6,8 +6,9 @@ import Cards from 'react-credit-cards';
 // import 'react-credit-cards/es/styles-compiled.css';
 import './rccsCard.scss'; // nie znalazlem innego sposobu na zmienienie styli. Powinno importowac sie to co powyżej
 
-const creditCardCommands = ['npm install --save react-credit-cards']
-const creaditCardLinks = [ {link: 'https://github.com/amarofashion/react-credit-cards', text:'for credit card'} ]
+const creditCardCommands = ['npm install --save react-credit-cards'];
+const creditCardLinks = [ {link: 'https://github.com/amarofashion/react-credit-cards', text:'for credit card'} ];
+const creditCardTutorials = ['https://www.youtube.com/watch?v=HpmL7dvyRUY&t=420s'];
 
 const CreditCard = () => {
 
@@ -45,7 +46,7 @@ const CreditCard = () => {
                 <input type="tel" name="cvc" id="cvc" value={cardInfo.cvc} onChange={handleInputChange} onFocus={handleFocus}/>
             </form>
 
-            <Docs links={creaditCardLinks} commands={creditCardCommands}/>
+            <Docs links={creditCardLinks} commands={creditCardCommands} tutorials={creditCardTutorials}/>
         </div>
      );
 }

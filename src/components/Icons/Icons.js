@@ -21,6 +21,7 @@ const fortawesomeLinks = [{link: 'https://www.npmjs.com/package/@fortawesome/rea
 
 const reactIconsCommands = ['npm install react-icons --save'];
 const reactIconsLinks = [{link: 'https://react-icons.netlify.com/#/', text: 'for react icons'}];
+const reactIconsTutorials = ['https://www.youtube.com/watch?v=4l0nsK4ezNc&list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM&index=2'];
 
 const Icons = () => {
     return ( 
@@ -60,7 +61,7 @@ const Icons = () => {
                         </div>
                     </IconContext.Provider>
 
-                    <Docs links={reactIconsLinks} commands={reactIconsCommands}/>
+                    <Docs links={reactIconsLinks} commands={reactIconsCommands} tutorials={reactIconsTutorials}/>
                 </div>
                 {/* ------------------------------------------------------------------------------------------------ */}
                 

@@ -4,8 +4,8 @@ import Docs from '../Docs/Docs.js';
 import './countup.scss';
 
 const countupCommands = ['npm install react-countup'];
-
 const countupLinks = [{ link: "https://www.npmjs.com/package/react-countup", text: 'for countup' }];
+const countupTutorials = ['https://www.youtube.com/watch?v=zttrshYjHHQ&list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM&index=6'];
 
 const Countup = () => {
 
@@ -50,7 +50,7 @@ const Countup = () => {
             <button className="button" onClick={() => update(2000)}>Update to 2000</button>
         </div>
 
-        <Docs links={countupLinks} commands={countupCommands} />
+        <Docs links={countupLinks} commands={countupCommands} tutorials={countupTutorials} />
     </div> 
     );
 }

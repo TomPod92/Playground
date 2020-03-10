@@ -22,6 +22,7 @@ import ReactClassnames from '../components/ReactClassnames/ReactClassnames.js';
 import Sortable from '../components/Sortable/Sortable.js';
 import ReactFormik from '../components/ReactFormik/ReactFormik.js';
 import CreditCard from '../components/CreditCard/CreditCard.js';
+import Spinner from '../components/Spinner/Spinner.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -83,6 +84,7 @@ const App = (props) => {
         <Route path="/sortable" component={Sortable} />
         <Route path="/formik" component={ReactFormik} />
         <Route path="/creditcard" component={CreditCard} />
+        <Route path="/spinner" component={Spinner} />
       </Switch>
     </BrowserRouter>
   )

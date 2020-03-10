@@ -5,6 +5,7 @@ import './modal.scss';
 
 const modalCommands = ['npm install react-modal'];
 const modalLinks = [{link: 'http://reactcommunity.org/react-modal/', text: 'for modal'}];
+const modalTutorials = ['https://www.youtube.com/watch?v=10FNqoPpNbE&list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM&index=4'];
 
 Modal.setAppElement('#root'); // bez tego wyskakuje blad
 
@@ -34,7 +35,7 @@ const MyModal = () => {
             <button className="modal__closeButton button" onClick={handleCloseModal}>Close</button>
         </Modal>
 
-        <Docs links={modalLinks} commands={modalCommands}/>
+        <Docs links={modalLinks} commands={modalCommands} tutorials={modalTutorials} />
 
     </div> 
     );
