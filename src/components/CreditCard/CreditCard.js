@@ -3,7 +3,8 @@ import Docs from '../Docs/Docs.js';
 import './creditCard.scss';
 
 import Cards from 'react-credit-cards';
-import 'react-credit-cards/es/styles-compiled.css';
+// import 'react-credit-cards/es/styles-compiled.css';
+import './rccsCard.scss'; // nie znalazlem innego sposobu na zmienienie styli. Powinno importowac sie to co powyżej
 
 const creditCardCommands = ['npm install --save react-credit-cards']
 const creaditCardLinks = [ {link: 'https://github.com/amarofashion/react-credit-cards', text:'for credit card'} ]
@@ -26,7 +27,6 @@ const CreditCard = () => {
                     expiry={cardInfo.expiry} 
                     cvc={cardInfo.cvc} 
                     focused={focused}
-                    className="myCard"
                     issuer={"visa"}
                 />
             </div>
