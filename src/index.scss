@@ -4,6 +4,7 @@
   --color-tertiary: #9DC8C8;
   --color-accent: #D1B6E1;
   --color-text-white: #e2e2e2;
+  --color-background: #eee;
   --shadow-down: 0 4px 8px rgba(0, 0, 0, 0.35);
   --shadow-diagonal: 4px 4px 8px rgba(0, 0, 0, 0.35);
 }
@@ -19,7 +20,7 @@ html {
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: var(--color-background);
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }

@@ -1,0 +1,45 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0.8rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+    font-size: 1.5rem;
+
+
+    &__title {
+        position: relative;
+        padding: 0.8rem;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--color-text-white);
+        background: var(--color-primary);
+    }
+
+    &__button {
+        position: absolute;
+        top: -23px;
+        right: -2px;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        color: var(--color-text-white);
+        background: var(--color-primary);
+        outline: none;
+    }
+
+    &__list {
+        min-height: 40rem;
+        flex-grow: 1;
+        padding: 1.8rem 2rem 0.8rem 2rem;
+        transition: background-color 0.3s ease-in;
+    }
+
+    &__list--isHovered {
+        background: var(--color-secondary);
+    }
+}
