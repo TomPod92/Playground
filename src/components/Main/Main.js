@@ -11,10 +11,10 @@ const Main = () => {
         <p className="app__paragraph">4. Pamiętać o dodatku -Docs-:</p>
         <p className="app__paragraph">------------------------------------</p>
         <p className="app__paragraph">import Docs from '../Docs/Docs.js';</p>
-        <p className="app__paragraph">{`const ...Links = [ {link: '...', text:'...'} ];`}</p>
-        <p className="app__paragraph">const ...Commands = ['...'];</p>
-        <p className="app__paragraph">const ...Tutorials = ['...'];</p>
-        <p className="app__paragraph">{ `<Docs links={...} commands={...} tutorials={...}/>` }</p>
+        <p className="app__paragraph">{`const Links = [ {link: '', text:''} ];`}</p>
+        <p className="app__paragraph">const Commands = [''];</p>
+        <p className="app__paragraph">const Tutorials = [''];</p>
+        <p className="app__paragraph">{ `<Docs links={} commands={} tutorials={}/>` }</p>
     </div> 
     );
 }

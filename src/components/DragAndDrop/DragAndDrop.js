@@ -27,10 +27,12 @@ const DragAndDrop = () => {
 
     const createTaskItems = (status) => {
         if(status === "done") {
+            // eslint-disable-next-line
             return tasks.map( current => {
                 if(!current.done) return <Card key={current.id} task={current} />
             })
         } else if(status === "notDone") {
+            // eslint-disable-next-line
             return tasks.map( current => {
                 if(current.done) return <Card key={current.id} task={current} />
             })

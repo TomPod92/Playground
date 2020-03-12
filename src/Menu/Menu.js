@@ -26,6 +26,8 @@ const MobileMenu = props => {
         <NavLink className="mobileNav__item" to="/spinner" exact onClick={props.openMenu}>Spinner</NavLink>
         <NavLink className="mobileNav__item" to="/loader" exact onClick={props.openMenu}>Loader spinner</NavLink>
         <NavLink className="mobileNav__item" to="/collapsibleDrawer" exact onClick={props.openMenu}>Collapsible</NavLink>
+        <NavLink className="mobileNav__item" to="/roadmap" exact onClick={props.openMenu}>Roadmap progress</NavLink>
+        <NavLink className="mobileNav__item" to="/beautifulDnd" exact onClick={props.openMenu}>Beautiful DnD</NavLink>
       </nav>
     </div>
   );

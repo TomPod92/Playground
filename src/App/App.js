@@ -25,6 +25,8 @@ import CreditCard from '../components/CreditCard/CreditCard.js';
 import Spinner from '../components/Spinner/Spinner.js';
 import LoaderSpinner from '../components/LoaderSpinner/LoaderSpinner.js';
 import CollapsibleDrawer from '../components/CollapsibleDrawer/CollapsibleDrawer.js';
+import Roadmap from '../components/Roadmap/Roadmap.js';
+import BeautifullDnD from '../components/BeautifullDnD/BeautifullDnD.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -59,6 +61,7 @@ const App = (props) => {
     Object.keys(translations).forEach( key =>props.addTranslationForLanguage(translations[key], key) );
     
     // props.setActiveLanguage('eng');
+    // eslint-disable-next-line
   }, []);
   //----------------------------------------------------------------
 
@@ -89,6 +92,8 @@ const App = (props) => {
         <Route path="/spinner" component={Spinner} />
         <Route path="/loader" component={LoaderSpinner} />
         <Route path="/collapsibleDrawer" component={CollapsibleDrawer} />
+        <Route path="/roadmap" component={Roadmap} />
+        <Route path="/beautifulDnd" component={BeautifullDnD} />
       </Switch>
     </BrowserRouter>
   )

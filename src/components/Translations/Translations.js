@@ -17,6 +17,7 @@ const Translations = (props) => {
 
     useEffect( () => {
         props.setActiveLanguage(language);
+        // eslint-disable-next-line
     }, [language])
 
     const handleLanguageChange = () => {
