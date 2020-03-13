@@ -27,6 +27,7 @@ import LoaderSpinner from '../components/LoaderSpinner/LoaderSpinner.js';
 import CollapsibleDrawer from '../components/CollapsibleDrawer/CollapsibleDrawer.js';
 import Roadmap from '../components/Roadmap/Roadmap.js';
 import BeautifullDnD from '../components/BeautifullDnD/BeautifullDnD.js';
+import JoyrideMap from '../components/JoyrideMap/JoyrideMap.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -94,6 +95,7 @@ const App = (props) => {
         <Route path="/collapsibleDrawer" component={CollapsibleDrawer} />
         <Route path="/roadmap" component={Roadmap} />
         <Route path="/beautifulDnd" component={BeautifullDnD} />
+        <Route path="/joyride" component={JoyrideMap} />
       </Switch>
     </BrowserRouter>
   )
