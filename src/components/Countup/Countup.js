@@ -17,28 +17,28 @@ const Countup = () => {
 
     return ( 
     <div className="countup centered">
-        <h2 className="countup__header basicHeader">Default:</h2>
+        <h2 className="countup__header header">Default:</h2>
         <div className="countup__number">
             <CountUp end={200}/>
         </div>
 
-        <h2 className="countup__header basicHeader">Different duration:</h2>
+        <h2 className="countup__header header">Different duration:</h2>
         <div className="countup__number">
             <CountUp end={200} duration={4}/>
         </div>
 
-        <h2 className="countup__header basicHeader">Different start:</h2>
+        <h2 className="countup__header header">Different start:</h2>
         <div className="countup__number">
             <CountUp start={300} end={1000} duration={4}/>
         </div>
 
-        <h2 className="countup__header basicHeader">Different prefix/suffix:</h2>
+        <h2 className="countup__header header">Different prefix/suffix:</h2>
         <div className="countup__number">
             <CountUp end={1000} duration={4} prefix='$' decimals={2} />
             {/* <CountUp end={1000} duration={4} suffix='$' decimals={2} /> */}
         </div>
 
-        <h2 className="countup__header basicHeader">Additional functions:</h2>
+        <h2 className="countup__header header">Additional functions:</h2>
         <div className="countup__number">
             { countUp }
         </div>

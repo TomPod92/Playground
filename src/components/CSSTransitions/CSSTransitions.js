@@ -37,11 +37,11 @@ const CSSTransitions = () => {
 
     return ( 
         <div className="cssTransitions centered">
-            <h1 className="cssTransitions__header basicHeader" >Pojedyńczy slide-in (CSSTransition)</h1>
+            <h1 className="cssTransitions__header header" >Pojedyńczy slide-in (CSSTransition)</h1>
             <button className="cssTransitions__button button" onClick={handleOpenBox}>Open box</button>
             <SingleBox boxOpen={boxOpen}/>
 
-            <h1 className="cssTransitions__header basicHeader">Lista komponentów (TransitionGroup)</h1>
+            <h1 className="cssTransitions__header header">Lista komponentów (TransitionGroup)</h1>
             <button className="cssTransitions__button button" onClick={handleAddItem}>Dodaj komponent</button>
             
             <TransitionGroup>

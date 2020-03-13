@@ -14,31 +14,31 @@ const Tooltip = () => {
     return ( 
     <div className="centered">
 {/* -------------------------------------------------------------------------------- */}
-        <h2 className="tooltip__header basicHeader">Basic tooltip</h2>
+        <h2 className="tooltip__header header">Basic tooltip</h2>
 
         <Tippy content="Tooltip nr.1">
             <button className="tooltip__button button">Show tooltip 1</button>
         </Tippy>
 {/* -------------------------------------------------------------------------------- */}
-        <h2 className="tooltip__header basicHeader">Tooltip z html tag'iem w środku</h2>
+        <h2 className="tooltip__header header">Tooltip z html tag'iem w środku</h2>
 
         <Tippy content={<span className="tooltip__span">Tooltip nr.2</span>}>
             <button className="tooltip__button button">Show tooltip 2</button>
         </Tippy>
 {/* -------------------------------------------------------------------------------- */}
-        <h2 className="tooltip__header basicHeader">Tooltip z react'owym komponentem w środku</h2>
+        <h2 className="tooltip__header header">Tooltip z react'owym komponentem w środku</h2>
 
         <Tippy content={<CustomTooltip />}>
             <button className="tooltip__button button">Show tooltip 3</button>
         </Tippy>
 {/* -------------------------------------------------------------------------------- */}
-        <h2 className="tooltip__header basicHeader">Tooltip z dodatkowymi propsami</h2>
+        <h2 className="tooltip__header header">Tooltip z dodatkowymi propsami</h2>
 
         <Tippy content="Tooltip nr.4" arrow={true} delay={500} placement="left">
             <button className="tooltip__button button">Show tooltip 4</button>
         </Tippy>
 {/* -------------------------------------------------------------------------------- */}
-        <h2 className="tooltip__header basicHeader">Tooltip okalajacy react'owy komponent</h2>
+        <h2 className="tooltip__header header">Tooltip okalajacy react'owy komponent</h2>
 
         <Tippy content="Tooltip nr.5">
             <CustomChild />

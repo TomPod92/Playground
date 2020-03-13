@@ -37,7 +37,7 @@ const IdleTimerContainer = () => {
   return (
     <div className="centered">
 
-      {isLoggedIn ? <h2 className="basicHeader">Hello Tomek</h2> : <h2 className="basicHeader">Hello Guest</h2>}
+      {isLoggedIn ? <h2 className="header">Hello Tomek</h2> : <h2 className="header">Hello Guest</h2>}
       <Docs links={idleTimerLinks}  commands={idleTimerCommands} tutorials={idleTimerTutorials}/>
 
       <IdleTimer

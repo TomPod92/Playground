@@ -29,7 +29,7 @@ const Icons = () => {
             <div className="icons">
                 <div className="icons__section">
                     {/* ------------------------------------------------------------------------------------------------ */}
-                    <h2 className="icons__header basicHeader">Ikony "fortawesome" importowane pojedyńczo do każdego komponentu</h2>
+                    <h2 className="icons__header header">Ikony "fortawesome" importowane pojedyńczo do każdego komponentu</h2>
                     
                     <div className="icon__container">
                         <div className="icons__icon">
@@ -39,20 +39,20 @@ const Icons = () => {
                         <FontAwesomeIcon icon={faCoffee} size='2x'/>
                     </div>
                     {/* --------------- */}
-                    <h2 className="icons__header basicHeader">Ikony "fortawesome" importowane do biblioteki ikon</h2>
+                    <h2 className="icons__header header">Ikony "fortawesome" importowane do biblioteki ikon</h2>
 
                     <IconComponent />
                     <Docs links={fortawesomeLinks} commands={fortawesomeCommands}/>
                 </div>
                 {/* ------------------------------------------------------------------------------------------------ */}
                 <div className="icons__section">
-                    <h2 className="icons__header basicHeader">Ikony "react icons" stylowane pojedyńczo</h2>
+                    <h2 className="icons__header header">Ikony "react icons" stylowane pojedyńczo</h2>
                     <div className="icon__container">
                         <FaAccessibleIcon color="#519D9E" size="5rem"/>
                         <FaAccessibleIcon className="reactIconClass"/>
                     </div>
                     {/* ---------------- */}
-                    <h2 className="icons__header basicHeader">Ikony "react icons" stylowane przez "context"</h2>
+                    <h2 className="icons__header header">Ikony "react icons" stylowane przez "context"</h2>
 
                     <IconContext.Provider value={{ color:"#519D9E", size:"5rem" }}>
                         <div className="icon__container">

@@ -40,13 +40,13 @@ const Sortable = () => {
 //---------------------------------------------------------------------------
     return ( 
         <div className="sortable centered">
-            <h2 className="basicHeader">Dodaj nowe zadanie</h2>
+            <h2 className="header">Dodaj nowe zadanie</h2>
             <div className="formContainer">
                 <input className="sortable__input" type="text" value={newTodoName} onChange={handleInputChange} />
                 <button className="button" onClick={handleAddNewTodo}>Dodaj</button>
             </div>
 
-            <h2 className="basicHeader">Do zrobienia</h2>
+            <h2 className="header">Do zrobienia</h2>
             <ReactSortable list={todos} setList={setTodos}>
                 { todos.map(current => <Todo key={current.id} todo={current} handleRemoveTodo={handleRemoveTodo}/>) }
             </ReactSortable>
