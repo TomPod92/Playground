@@ -8,7 +8,7 @@ const Tutorials = ['https://www.youtube.com/watch?v=NW8erkUgqus&t=1202s'];
 
 const ReactDnd = () => {
   return ( 
-    <div className="reactDnD container">
+    <div className="reactDnD centered">
       reactDnD
       <Docs links={Links} commands={Commands} tutorials={Tutorials}/>
     </div>
