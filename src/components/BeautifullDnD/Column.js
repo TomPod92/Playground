@@ -1,6 +1,6 @@
 import React from 'react';
-import Task from './Task.js';
-// import TaskList from './TaskList.js';
+// import Task from './Task.js';
+import TaskList from './TaskList.js';
 import { Droppable } from 'react-beautiful-dnd';
 import './column.scss';
 
@@ -10,14 +10,6 @@ class Column extends React.Component {
         columnDisabled: false
     }
 
-    shouldComponentUpdate(nextProps) {
-        if(nextProps.tasks === this.props.tasks) {
-            return false;
-        } 
-
-        return true;
-    }
-
     handleColumDisable = () => {
         this.setState( prevState => ({
             columnDisabled: !prevState.columnDisabled
@@ -25,8 +17,6 @@ class Column extends React.Component {
     }
     
     render() {
-        // console.log('Propsy komponentu COLUMN: ', this.props)
-        console.log('render')
         return (
             <div className="column">
                 <h2 className="column__title">
@@ -53,9 +43,9 @@ class Column extends React.Component {
                             {...provided.droppableProps} 
                             ref={provided.innerRef}
                         >
-                            {/* <TaskList tasks={this.props.tasks}/> */}
+                            <TaskList tasks={this.props.tasks}/>
 
-                            { this.props.tasks.map( (currentTask, index) => <Task key={currentTask.id} task={currentTask} index={index}/>) }
+                            {/* { this.props.tasks.map( (currentTask, index) => <Task key={currentTask.id} task={currentTask} index={index}/>) } */}
 
                             {provided.placeholder} 
                         </div>
@@ -63,7 +53,6 @@ class Column extends React.Component {
                 </Droppable>
             </div>
         )
-        
     }
 }
 
