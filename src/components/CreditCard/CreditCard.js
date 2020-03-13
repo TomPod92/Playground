@@ -20,7 +20,7 @@ const CreditCard = () => {
     const handleFocus = (event) => setFocused(event.target.name)
 
     return ( 
-        <div className="creditCard container">
+        <div className="creditCard centered">
             <div className="myCard">
                 <Cards 
                     name={cardInfo.name} 

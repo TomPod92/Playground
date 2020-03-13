@@ -17,7 +17,7 @@ const MyModal = () => {
     const handleCloseModal = () => setModalIsOpen(false);
 
     return ( 
-    <div className="container">
+    <div className="centered">
 
         <button className="openButton button" onClick={handleOpenModal}>Open</button>
 

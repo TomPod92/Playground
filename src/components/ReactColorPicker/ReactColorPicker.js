@@ -14,7 +14,7 @@ const ReactColorPicker = () => {
     const handleChangeColor = updatedColor => setColor(updatedColor);
 
     return ( 
-        <div className="reactColorPicker container">
+        <div className="reactColorPicker centered">
             <ChromePicker color={color} onChange={handleChangeColor} className="colorPicker"/>
 
             <Docs links={reactColorLinks} commands={reactColorCommands} tutorials={reactTutorials}/>

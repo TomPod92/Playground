@@ -12,7 +12,7 @@ const tooltipTutorials = ['https://www.youtube.com/watch?v=8y4Dr9jJtF0&list=PLC3
 
 const Tooltip = () => {
     return ( 
-    <div className="container">
+    <div className="centered">
 {/* -------------------------------------------------------------------------------- */}
         <h2 className="tooltip__header basicHeader">Basic tooltip</h2>
 

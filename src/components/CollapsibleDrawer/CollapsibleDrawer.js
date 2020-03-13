@@ -15,7 +15,7 @@ const dummyData = [
 
 const CollapsibeDrawer = () => {
     return ( 
-        <div className="collapsibleDrawer container">
+        <div className="collapsibleDrawer centered">
             {dummyData.map(current => (
                 <Collapsible 
                     trigger={current.header}

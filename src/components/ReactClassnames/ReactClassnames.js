@@ -32,7 +32,7 @@ const ReactClassnames = () => {
     }
 
     return ( 
-        <div className="reactClassnames container">
+        <div className="reactClassnames centered">
 
             <p className={`reactClassname__text ${divClasses}`}>Here is some sample text</p>
 

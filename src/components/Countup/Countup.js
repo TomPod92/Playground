@@ -16,7 +16,7 @@ const Countup = () => {
     })
 
     return ( 
-    <div className="countup container">
+    <div className="countup centered">
         <h2 className="countup__header basicHeader">Default:</h2>
         <div className="countup__number">
             <CountUp end={200}/>

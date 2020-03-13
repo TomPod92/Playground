@@ -21,7 +21,7 @@ const Spinner = () => {
     const [ loading, setLoading ] = useState(false);
 
     return ( 
-        <div className="spinner container">
+        <div className="spinner centered">
             <div className="button spinner__button" onClick={()=> setLoading(!loading)}>{loading ? 'Close' : 'Open'}</div>
 
             <ClipLoader

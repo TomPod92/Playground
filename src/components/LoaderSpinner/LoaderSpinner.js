@@ -12,7 +12,7 @@ const LoaderSpinner = () => {
     const [ loading, setLoading ] = useState(false);
 
     return ( 
-        <div className="loader container">
+        <div className="loader centered">
 
         <div className="button loaderSpinner__button" onClick={()=> setLoading(!loading)}>{loading ? 'Close' : 'Open'}</div>
 

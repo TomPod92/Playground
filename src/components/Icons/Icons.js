@@ -25,7 +25,7 @@ const reactIconsTutorials = ['https://www.youtube.com/watch?v=4l0nsK4ezNc&list=P
 
 const Icons = () => {
     return ( 
-        <div className="container">
+        <div className="centered">
             <div className="icons">
                 <div className="icons__section">
                     {/* ------------------------------------------------------------------------------------------------ */}

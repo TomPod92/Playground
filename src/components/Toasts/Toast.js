@@ -32,7 +32,7 @@ const Toast = () => {
     }
 
     return ( 
-        <div className="container">
+        <div className="centered">
             <button className="toast__button button" onClick={notify}>Open</button>
 
             <ToastContainer

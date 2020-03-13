@@ -36,7 +36,7 @@ const CSSTransitions = () => {
     };
 
     return ( 
-        <div className="cssTransitions container">
+        <div className="cssTransitions centered">
             <h1 className="cssTransitions__header basicHeader" >Pojedyńczy slide-in (CSSTransition)</h1>
             <button className="cssTransitions__button button" onClick={handleOpenBox}>Open box</button>
             <SingleBox boxOpen={boxOpen}/>

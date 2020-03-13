@@ -28,6 +28,7 @@ import CollapsibleDrawer from '../components/CollapsibleDrawer/CollapsibleDrawer
 import Roadmap from '../components/Roadmap/Roadmap.js';
 import BeautifullDnD from '../components/BeautifullDnD/BeautifullDnD.js';
 import JoyrideMap from '../components/JoyrideMap/JoyrideMap.js';
+import ReactDnD from '../components/ReactDnD/ReactDnD.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -96,6 +97,7 @@ const App = (props) => {
         <Route path="/roadmap" component={Roadmap} />
         <Route path="/beautifulDnd" component={BeautifullDnD} />
         <Route path="/joyride" component={JoyrideMap} />
+        <Route path="/reactDnD" component={ReactDnD} />
       </Switch>
     </BrowserRouter>
   )

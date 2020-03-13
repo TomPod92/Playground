@@ -18,7 +18,7 @@ const JoyrideMap = () => {
   };
 
   return (
-    <div className="joyrideMap container">
+    <div className="joyrideMap centered">
       <ReactJoyride
         continuous
         // scrollToFirstStep

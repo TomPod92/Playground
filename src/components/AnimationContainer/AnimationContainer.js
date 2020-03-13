@@ -11,7 +11,7 @@ const AnimationContainer = () => {
     };
 
     return ( 
-        <div className="container"> 
+        <div className="centered"> 
             <button className="button animation__button" onClick={() => ySpot === 0 ? setYSpot(102) : setYSpot(0)}>Move it</button>
 
             <motion.div className="box" transition={{ duration: 1}} animate={{ y: ySpot }} />

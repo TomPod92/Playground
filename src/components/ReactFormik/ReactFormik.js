@@ -43,7 +43,7 @@ const ReactFormik = () => {
 
     // "{...formik.getFieldProps(...)}" zwraca -->onChange, onBlur, value, checked<-- wiec nie trzeba ich podawac osobno }
     return ( 
-        <div className="reactFormik container">
+        <div className="reactFormik centered">
 
                 <form className="form" onSubmit={formik.handleSubmit}>
                     <div className="input-row">

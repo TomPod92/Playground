@@ -3,7 +3,7 @@ import './main.scss';
 
 const Main = () => {
     return ( 
-    <div className="container">
+    <div className="centered">
         <h1 className="app__header">Playground</h1>
         <p className="app__paragraph">1. Stworzyć nowy folder, a w nim nowy plik JS i SCSS</p>
         <p className="app__paragraph">2. W pliku App/App.js dodać nowy -Route- i zaimportowac nowy komponent</p>

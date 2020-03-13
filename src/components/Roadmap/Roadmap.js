@@ -28,7 +28,7 @@ const milestones = [
 
 const Roadmap = () => {
     return ( 
-        <div className="roadmap container">
+        <div className="roadmap centered">
             <RoadmapProgress milestones={milestones} />
             <Docs links={roadmapLinks} commands={roadmapCommands}/>
         </div>

@@ -26,7 +26,7 @@ const Translations = (props) => {
     }
 
     return (
-        <div className="translations container">
+        <div className="translations centered">
             <p className="translations__paragraph"><Translate id="greeting" /></p>
             <p className="translations__paragraph"><Translate id="common.name" /></p>
             <p className="translations__paragraph"><InnerComponent /></p>

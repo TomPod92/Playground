@@ -116,7 +116,7 @@ class BeautifullDnD extends React.Component {
 //----------------------------------------------------------------------------------------------------------------
     render() {
         return (
-            <div className="container">
+            <div className="centered">
                 <div className="beautifullDnD">
                     {/* Trzeba opakować cała część aplikacji, która ma mieć dostęp do drag-and-drop'a */}
                     <DragDropContext

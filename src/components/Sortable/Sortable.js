@@ -39,7 +39,7 @@ const Sortable = () => {
     }
 //---------------------------------------------------------------------------
     return ( 
-        <div className="sortable container">
+        <div className="sortable centered">
             <h2 className="basicHeader">Dodaj nowe zadanie</h2>
             <div className="formContainer">
                 <input className="sortable__input" type="text" value={newTodoName} onChange={handleInputChange} />
