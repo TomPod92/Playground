@@ -29,6 +29,7 @@ import Roadmap from '../components/Roadmap/Roadmap.js';
 import BeautifullDnD from '../components/BeautifullDnD/BeautifullDnD.js';
 import JoyrideMap from '../components/JoyrideMap/JoyrideMap.js';
 import ReactDnD from '../components/ReactDnD/ReactDnD.js';
+import PieChart from '../components/PieChart/PieChart.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -98,6 +99,7 @@ const App = (props) => {
         <Route path="/beautifulDnd" component={BeautifullDnD} />
         <Route path="/joyride" component={JoyrideMap} />
         <Route path="/reactDnD" component={ReactDnD} />
+        <Route path="/piechart" component={PieChart} />
       </Switch>
     </BrowserRouter>
   )
