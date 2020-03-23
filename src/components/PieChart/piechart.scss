@@ -17,8 +17,8 @@
 }
 
 .piechart__card svg {
-    width: 15rem; // Musi być tu dokładnie podwojona wartość z cx
-    height: 15rem; // Musi być tu dokładnie podwojona wartość z cy
+    width: 15rem; // 2 * cx
+    height: 15rem; // 2 * cy
     transform: rotate(-90deg);
 }
 
