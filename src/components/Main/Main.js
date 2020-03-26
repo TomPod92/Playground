@@ -14,7 +14,7 @@ const Main = () => {
         <p className="app__paragraph">{`const Links = [ {link: '', text:''} ];`}</p>
         <p className="app__paragraph">const Commands = [''];</p>
         <p className="app__paragraph">const Tutorials = [''];</p>
-        <p className="app__paragraph">{ `<Docs links={} commands={} tutorials={}/>` }</p>
+        <p className="app__paragraph">{ `<Docs links={Links} commands={Commands} tutorials={Tutorials}/>` }</p>
     </div> 
     );
 }

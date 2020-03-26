@@ -31,6 +31,7 @@ import JoyrideMap from '../components/JoyrideMap/JoyrideMap.js';
 import ReactDnD from '../components/ReactDnD/ReactDnD.js';
 import PieChart from '../components/PieChart/PieChart.js';
 import ReactDatePicker from '../components/ReactDatePicker/ReactDatePicker.js';
+import Presentation from '../components/Presentation/Presentation.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -102,6 +103,7 @@ const App = (props) => {
         <Route path="/reactDnD" component={ReactDnD} />
         <Route path="/piechart" component={PieChart} />
         <Route path="/datepicker" component={ReactDatePicker} />
+        <Route path="/presentation" component={Presentation} />
       </Switch>
     </BrowserRouter>
   )
