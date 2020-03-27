@@ -32,6 +32,7 @@ import ReactDnD from '../components/ReactDnD/ReactDnD.js';
 import PieChart from '../components/PieChart/PieChart.js';
 import ReactDatePicker from '../components/ReactDatePicker/ReactDatePicker.js';
 import Presentation from '../components/Presentation/Presentation.js';
+import Buttons from '../components/Buttons/Buttons.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -104,6 +105,7 @@ const App = (props) => {
         <Route path="/piechart" component={PieChart} />
         <Route path="/datepicker" component={ReactDatePicker} />
         <Route path="/presentation" component={Presentation} />
+        <Route path="/buttons" component={Buttons} />
       </Switch>
     </BrowserRouter>
   )
