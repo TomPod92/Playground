@@ -1,0 +1,13 @@
+.mediaPlayer__player {
+    margin-bottom: 2rem;
+}
+
+.mediaPlayer__text {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-text-white);
+    background: var(--color-primary);
+    border-radius: 5px;
+}

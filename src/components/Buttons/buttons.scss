@@ -11,6 +11,8 @@
     border-radius: 4rem;
     border: none;
     overflow: hidden;
+
+    &:focus { outline: 0; }
 }
 
 .coolButton--one { background: linear-gradient(90deg, #0162c8, #55e7fc); }
