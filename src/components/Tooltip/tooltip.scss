@@ -9,3 +9,67 @@
 .tooltip__span {
     color: var(--color-primary);
 }
+// -----------------------------------------------------
+// TOOLTIP W CSS'ie
+.custom {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    background: var(--color-primary);
+}
+
+.custom::before, 
+.custom::after {
+    --scale: 0;
+    --tooltip-color: #333;
+    --arrow-size: 1rem;
+    
+    position: absolute;
+    content: '';
+    top: -5px; // odległość strzełaki od elementu
+    left: 50%;
+    transform: translate(-50%, var(--translate-y, 0)) 
+               scale(var(--scale));
+    transition: all 0.3s ease-in;
+    transform-origin: bottom center;
+}
+
+.custom::before {
+    --translate-y: calc(-99% - var(--arrow-size));
+
+    content: attr(data-tooltip);
+    padding: 0.5rem 1rem;
+    width: max-content;
+    max-width: 100%;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    background: var(--tooltip-color);
+}
+
+.custom:hover::before,
+.custom:hover::after {
+    --scale: 1;
+}
+
+.custom::after {
+    --translate-y: calc(-1* var(--arrow-size));
+
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-top-color: var(--tooltip-color);
+    transform-origin: top center;
+}
+
+.custom__tutorial {
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+}
+
