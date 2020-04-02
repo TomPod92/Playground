@@ -16,6 +16,7 @@ const override = css`
 
 const spinnerCommands = ['npm install --save react-spinners'];
 const spinnerLinks = [ {link: 'https://www.npmjs.com/package/react-spinners', text:'for react spinner'} ];
+const spinnerTutorials = ['https://www.youtube.com/watch?v=T0i0zHyryrs'];
 
 const Spinner = () => {
     const [ loading, setLoading ] = useState(false);
@@ -33,7 +34,7 @@ const Spinner = () => {
 
             <BeatLoader loading={!loading}/>
 
-            <Docs links={spinnerLinks} commands={spinnerCommands}/>
+            <Docs links={spinnerLinks} commands={spinnerCommands} tutorials={spinnerTutorials}/>
         </div>
      );
 }
