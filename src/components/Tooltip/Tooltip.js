@@ -47,7 +47,7 @@ const Tooltip = () => {
         <h2 className="tooltip__header header">Tooltip w CSS'ie</h2>
         <div className="custom" data-tooltip="Jakiś text"></div>
 
-        <a href="https://www.youtube.com/watch?v=ujlpzTyJp-M" target="_blank" className="custom__tutorial">Tutorial</a>
+        <a href="https://www.youtube.com/watch?v=ujlpzTyJp-M" target="_blank" rel="noopener noreferrer" className="custom__tutorial">Tutorial</a>
 
         <Docs links={tooltipLinks} commands={tooltipCommands} tutorials={tooltipTutorials}/>
     </div>

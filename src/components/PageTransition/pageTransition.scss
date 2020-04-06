@@ -1,0 +1,65 @@
+.pageTransition__navigation {
+    display: flex;
+    justify-content: center;
+    // width: 80%;
+    margin-bottom: 4rem;
+    background: var(--color-primary);
+}
+
+.link {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: var(--color-text-white);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+
+    &:hover {
+        background: var(--color-secondary);
+    }
+}
+.page {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.page__header {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.page__text {
+    display: block;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.moveDown {
+    color: red;
+}
+
+// FOR REACT TRANSITION GROUP
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+}

@@ -34,6 +34,7 @@ import ReactDatePicker from '../components/ReactDatePicker/ReactDatePicker.js';
 import Presentation from '../components/Presentation/Presentation.js';
 import Buttons from '../components/Buttons/Buttons.js';
 import MediaPlayer from '../components/MediaPlayer/MediaPlayer.js';
+import PageTransition from '../components/PageTransition/PageTransition.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -108,6 +109,7 @@ const App = (props) => {
         <Route path="/presentation" component={Presentation} />
         <Route path="/buttons" component={Buttons} />
         <Route path="/mediaPlayer" component={MediaPlayer} />
+        <Route path="/pageTransition" component={PageTransition} />
       </Switch>
     </BrowserRouter>
   )
