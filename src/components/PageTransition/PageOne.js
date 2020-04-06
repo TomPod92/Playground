@@ -3,7 +3,7 @@ import Docs from '../Docs/Docs.js';
 
 const Links = [ {link: 'https://reactcommunity.org/react-transition-group/', text:'for transiton-group'} ];
 const Commands = ['npm install react-transition-group --save'];
-const Tutorials = ['https://www.youtube.com/watch?v=NUQkajBdnmQ'];
+const Tutorials = ['https://www.youtube.com/watch?v=NUQkajBdnmQ', 'https://www.youtube.com/watch?v=tOusa012Fus'];
 
 const PageOne = () => {
     return (
