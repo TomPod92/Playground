@@ -1,0 +1,17 @@
+.button-container {
+    margin-bottom: 3rem;
+}
+.chart__button {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    background: var(--color-primary);
+    color: var(--color-text-white);
+    cursor: pointer;
+}
+
+.withCustomSize {
+    width: 80rem;
+}

@@ -36,6 +36,7 @@ const MobileMenu = props => {
         <NavLink className="mobileNav__item" to="/buttons" exact onClick={props.openMenu}>Cool buttons</NavLink>
         <NavLink className="mobileNav__item" to="/mediaPlayer" exact onClick={props.openMenu}>React Player</NavLink>
         <NavLink className="mobileNav__item" to="/pageTransition" exact onClick={props.openMenu}>Page Transition</NavLink>
+        <NavLink className="mobileNav__item" to="/reactCharts" exact onClick={props.openMenu}>React Chart</NavLink>
       </nav>
     </div>
   );
