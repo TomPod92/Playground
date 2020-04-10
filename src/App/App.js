@@ -37,6 +37,10 @@ import MediaPlayer from '../components/MediaPlayer/MediaPlayer.js';
 import PageTransition from '../components/PageTransition/PageTransition.js';
 import ReactCharts from '../components/ReactChart/ReactChart.js';
 import Laptop from '../components/Laptop/Laptop.js';
+import InfiniteScrollNavigation from '../components/InfiniteScroll/InfiniteScrollNavigation.js';
+import WithPackage from '../components/InfiniteScroll/WithNpm.js'
+import NoPackagev1 from '../components/InfiniteScroll/NoPackagev1'
+import NoPackagev2 from '../components/InfiniteScroll/NoPackagev2'
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -114,6 +118,11 @@ const App = (props) => {
         <Route path="/pageTransition" component={PageTransition} />
         <Route path="/reactCharts" component={ReactCharts} />
         <Route path="/laptop" component={Laptop} />
+        <Route path="/infiniteScroll" component={InfiniteScrollNavigation} exact/>
+
+        <Route path="/infiniteScroll/npmPackage" component={WithPackage} />
+        <Route path="/infiniteScroll/noPackage_1" component={NoPackagev1} />
+        <Route path="/infiniteScroll/noPackage_2" component={NoPackagev2} />
       </Switch>
     </BrowserRouter>
   )
