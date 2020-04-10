@@ -1,0 +1,72 @@
+.outerScreen {
+    position: relative;
+    width: 46rem;
+    height: 30rem;
+    border-radius: 8px;
+    background-color: #282828;
+}
+
+.innerScreen {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    height: calc(100% - 50px);
+    width: calc(100% - 20px);
+    background: white;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.bottomStrip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    height: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 15px 15px;
+
+    & span {
+        position: relative;
+        bottom: 2px;
+        text-align: center;
+        font-size: 7px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.keyboard {
+    display: flex;
+    justify-content: center;
+    width: 52rem;
+    height: 1.2rem;
+    border-radius: 3px 3px 0 0;
+    background: #626262;
+    z-index: 1;
+}
+
+.touchpad {
+    width: 10rem;
+    height: 6px;
+    border-radius: 0 0 3px 3px;
+    background: #4d4d4d;
+}
+
+.base {
+    height: 10px;
+    width: 52rem;
+    background: #535353;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    box-shadow: 1rem 0rem 2rem rgba(65, 65, 65, 0.8);
+}
+
+.laptopButton {
+    margin-top: 3rem;
+    text-decoration: none;
+}

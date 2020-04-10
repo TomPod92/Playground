@@ -36,6 +36,7 @@ import Buttons from '../components/Buttons/Buttons.js';
 import MediaPlayer from '../components/MediaPlayer/MediaPlayer.js';
 import PageTransition from '../components/PageTransition/PageTransition.js';
 import ReactCharts from '../components/ReactChart/ReactChart.js';
+import Laptop from '../components/Laptop/Laptop.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -112,6 +113,7 @@ const App = (props) => {
         <Route path="/mediaPlayer" component={MediaPlayer} />
         <Route path="/pageTransition" component={PageTransition} />
         <Route path="/reactCharts" component={ReactCharts} />
+        <Route path="/laptop" component={Laptop} />
       </Switch>
     </BrowserRouter>
   )
