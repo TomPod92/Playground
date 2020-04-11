@@ -1,0 +1,86 @@
+.infiniteScroll {
+
+    &__navItem {
+        width: 19rem;
+        padding: 0.7rem 1.4rem;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        color: var(--color-text-white);
+        text-decoration: none;
+        text-align: center;
+        background: var(--color-primary);
+        border-radius: 5px;
+        transition: all 0.3s ease-in;
+    }
+
+    &__navItem:hover {
+        background: var(--color-secondary);
+    }
+
+    &__button {
+        padding: 0.7rem 1.4rem;
+        margin-right: 1rem;
+        font-size: 1.8rem;
+        color: var(--color-text-white);
+        text-decoration: none;
+        text-align: center;
+        background: var(--color-primary);
+        border-radius: 5px;
+    }
+
+    &__input {
+        display: block;
+        padding: 0.7rem 1.4rem;
+        font-size: 1.8rem;
+        border-radius: 5px;
+        border: 2px solid var(--color-primary);
+
+        &:focus { outline: none; }
+    }
+
+    .book {
+        width: 40%;
+        margin: 0 auto;
+        padding: 0.7rem 2rem;
+        font-size: 1.2rem;
+        border-bottom: 2px solid var(--color-primary);
+    }
+
+    &__loading {
+        width: 10rem;
+        padding: 0.7rem 1.4rem;
+        margin: 2rem auto 5rem auto;
+        font-size: 1.8rem;
+        color: var(--color-text-white);
+        text-decoration: none;
+        text-align: center;
+        background: var(--color-primary);
+        border-radius: 5px;
+
+    }
+
+    &__error {
+        width: 10rem;
+        padding: 0.7rem 1.4rem;
+        margin: 2rem auto 5rem auto;
+        font-size: 1.8rem;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        background: var(--color-accent);
+        border-radius: 5px;
+    }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 4rem 0;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
