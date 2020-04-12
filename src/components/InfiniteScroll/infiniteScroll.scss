@@ -84,3 +84,37 @@
     margin-bottom: 3rem;
 }
 
+
+// --------------- WITH NPM ----------------
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5rem auto;
+}
+
+.image--usingBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image--usingImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem;
+    overflow: hidden;
+
+    & img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
