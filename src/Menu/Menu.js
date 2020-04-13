@@ -39,6 +39,7 @@ const MobileMenu = props => {
         <NavLink className="mobileNav__item" to="/reactCharts" exact onClick={props.openMenu}>React Chart</NavLink>
         <NavLink className="mobileNav__item" to="/laptop" exact onClick={props.openMenu}>Laptop</NavLink>
         <NavLink className="mobileNav__item" to="/infiniteScroll" exact onClick={props.openMenu}>Infinite Scroll</NavLink>
+        <NavLink className="mobileNav__item" to="/intersectionObserver" exact onClick={props.openMenu}>Intersection Observer</NavLink>
       </nav>
     </div>
   );

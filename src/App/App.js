@@ -41,6 +41,9 @@ import InfiniteScrollNavigation from '../components/InfiniteScroll/InfiniteScrol
 import WithPackage from '../components/InfiniteScroll/WithNpm.js'
 import NoPackagev1 from '../components/InfiniteScroll/NoPackagev1'
 import NoPackagev2 from '../components/InfiniteScroll/NoPackagev2'
+import InterSectionObserverNavigation from '../components/IntersectionObserver/IntersectionObserverNavigation.js';
+import MyInterSectionObserver from '../components/IntersectionObserver/MyIntersectionObserver.js';
+import InterSectionObserverNPM from '../components/IntersectionObserver/InterSectionObserverNPM.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -123,6 +126,10 @@ const App = (props) => {
         <Route path="/infiniteScroll/npmPackage" component={WithPackage} />
         <Route path="/infiniteScroll/noPackage_1" component={NoPackagev1} />
         <Route path="/infiniteScroll/noPackage_2" component={NoPackagev2} />
+
+        <Route path="/intersectionObserver" component={InterSectionObserverNavigation} exact/>
+        <Route path="/intersectionObserver/npmPackage" component={MyInterSectionObserver} />
+        <Route path="/intersectionObserver/noPackage" component={InterSectionObserverNPM} />
       </Switch>
     </BrowserRouter>
   )
