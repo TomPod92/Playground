@@ -36,6 +36,7 @@
     "react-loader-spinner": "^3.1.5",
     "react-localize-redux": "^3.5.3",
     "react-modal": "^3.11.2",
+    "react-overdrive": "0.0.10",
     "react-player": "^1.15.3",
     "react-roadmap-progress": "^1.0.5",
     "react-router-dom": "^5.1.2",

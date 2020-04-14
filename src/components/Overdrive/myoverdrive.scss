@@ -1,0 +1,70 @@
+.overdrive {
+
+}
+
+.overdrive__navigation {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.overdrive__navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    height: 40rem;
+    padding: 3rem;
+    margin-right: 2rem;
+    border: 3px solid var(--color-primary);
+    border-radius: 5px;
+    background: var(--color-background);
+}
+
+.overdrive__image {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+
+.overdrive__link {
+    padding: 0.7rem 1.4rem;
+    background: var(--color-primary);
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-text-white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.overdrivePage {
+    position: relative;
+    width: 90rem;
+    margin: 5rem auto;
+}
+
+.overdrivePage__image {
+    width: 100%;
+    max-height: 790px;
+}
+
+.overdrivePage__paragraph {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    width: 80%;
+    color: var(--color-text-white);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    transform: translateX(-50%);
+}
+
+.overdrivePage__link {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-text-white);
+    text-decoration: none;
+}

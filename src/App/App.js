@@ -44,6 +44,9 @@ import NoPackagev2 from '../components/InfiniteScroll/NoPackagev2'
 import InterSectionObserverNavigation from '../components/IntersectionObserver/IntersectionObserverNavigation.js';
 import MyInterSectionObserver from '../components/IntersectionObserver/MyIntersectionObserver.js';
 import InterSectionObserverNPM from '../components/IntersectionObserver/InterSectionObserverNPM.js';
+import MyOverdrive from '../components/Overdrive/MyOverdrive.js';
+import Page_A from '../components/Overdrive/Page_A.js';
+import Page_B from '../components/Overdrive/Page_B.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -130,6 +133,10 @@ const App = (props) => {
         <Route path="/intersectionObserver" component={InterSectionObserverNavigation} exact/>
         <Route path="/intersectionObserver/npmPackage" component={MyInterSectionObserver} />
         <Route path="/intersectionObserver/noPackage" component={InterSectionObserverNPM} />
+
+        <Route path="/overdrive" component={MyOverdrive} exact/>
+        <Route path="/overdrive/page_A" component={Page_A} />
+        <Route path="/overdrive/page_B" component={Page_B} />
       </Switch>
     </BrowserRouter>
   )
