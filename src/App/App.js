@@ -84,7 +84,6 @@ const App = (props) => {
     // eslint-disable-next-line
   }, []);
   //----------------------------------------------------------------
-
   return (
     <BrowserRouter>
       <Hamburger openMenu={openMenu} open={menuOpen} />

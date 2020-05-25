@@ -24,10 +24,14 @@ const Buttons = () => {
 
     };
 
+    
+//   const test = () => () => console.log('test')
+
     return ( 
         <div className="buttons centered">
             <button className="coolButton coolButton--one" onClick={createRipples}>button</button>
             <button className="coolButton coolButton--two" onClick={createRipples}>button</button>
+            {/* <button onClick={() => test()} >Test</button> */}
         </div>
     );
 }
