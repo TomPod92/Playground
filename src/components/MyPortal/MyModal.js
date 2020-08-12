@@ -9,7 +9,7 @@ export const MyModal = (props) => {
 
   return ReactDOM.createPortal(
     <>
-      <div className="myModalOverlay"></div>
+      <div className="myModalOverlay" onClick={props.closeModal}></div>
       <div className="myModal">
         {props.children}
         <button onClick={props.closeModal}>Close modal</button>
