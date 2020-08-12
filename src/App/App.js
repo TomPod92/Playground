@@ -47,6 +47,10 @@ import InterSectionObserverNPM from '../components/IntersectionObserver/InterSec
 import MyOverdrive from '../components/Overdrive/MyOverdrive.js';
 import Page_A from '../components/Overdrive/Page_A.js';
 import Page_B from '../components/Overdrive/Page_B.js';
+import { ContextAndReducer } from '../components/Hooks/ContextAndReducer';
+import { UseCallback } from '../components/Hooks/UseCallback';
+import { CustomHooks } from '../components/Hooks/CustomHooks.js';
+import { MyPortal } from '../components/MyPortal/MyPortal.js';
 import './app.scss';
 
 //----------------------------------------------------------------
@@ -136,6 +140,12 @@ const App = (props) => {
         <Route path="/overdrive" component={MyOverdrive} exact/>
         <Route path="/overdrive/page_A" component={Page_A} />
         <Route path="/overdrive/page_B" component={Page_B} />
+
+        {/* // test */}
+        <Route path="/contextAndReducer" component={ContextAndReducer} /> 
+        <Route path="/useCallback" component={UseCallback} /> 
+        <Route path="/customHooks" component={CustomHooks} />
+        <Route path="/portal" component={MyPortal} />
       </Switch>
     </BrowserRouter>
   )

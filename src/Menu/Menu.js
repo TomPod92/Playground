@@ -41,6 +41,11 @@ const MobileMenu = props => {
         <NavLink className="mobileNav__item" to="/infiniteScroll" exact onClick={props.openMenu}>Infinite Scroll</NavLink>
         <NavLink className="mobileNav__item" to="/intersectionObserver" exact onClick={props.openMenu}>Intersection Observer</NavLink>
         <NavLink className="mobileNav__item" to="/overdrive" exact onClick={props.openMenu}>Overdrive</NavLink>
+        {/* // test */}
+        <NavLink className="mobileNav__item" to="/contextAndReducer" exact onClick={props.openMenu}>Context And Reducer</NavLink>
+        <NavLink className="mobileNav__item" to="/useCallback" exact onClick={props.openMenu}>UseCallback</NavLink>
+        <NavLink className="mobileNav__item" to="/customHooks" exact onClick={props.openMenu}>Custom Hooks</NavLink>
+        <NavLink className="mobileNav__item" to="/portal" exact onClick={props.openMenu}>Portal</NavLink>
       </nav>
     </div>
   );
